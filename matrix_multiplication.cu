@@ -74,7 +74,7 @@ int main() {
 
     cudaMemcpy(matrixC, dev_matrixC, sizeC, cudaMemcpyDeviceToHost);
 
-    printf("Elapsed time: %.3f milliseconds\n", milliseconds);
+    printf("%f milliseconds", milliseconds);
     cudaEventDestroy(start);
     cudaEventDestroy(stop);
     cudaFree(dev_matrixA);
